@@ -7,7 +7,7 @@ services:
     container_name: php73
     depends_on:
       - db
-    volumes: 
+    volumes:
       - ./:/var/www/html/
     ports:
       - 8000:80
@@ -25,6 +25,7 @@ services:
   composer:
     restart: 'no'
     image: composer
+    working_dir: /var/www/html/
     command: install
     volumes:
       - ./:/var/www/html/
