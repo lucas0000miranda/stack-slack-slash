@@ -1,0 +1,7 @@
+# Basic config for webhook
+
+slack_webhook_url: "https://hooks.slack.com/services/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"
+icon_url: " "; # the URL for where you upload the image, eg http://domain.com/slackipedia/wikipedia-logo-cc-by-sa_0.png
+wiki_lang: "pt";
+search_limit: "4";
+user_agent: "Slackipedia/1.0 (https://github.com/lucas0000miranda/stack-slack-slash.git; lucas0000miranda@outlook.com)";

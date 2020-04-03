@@ -6,6 +6,20 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitddf7d63a07ac8068a2157541b55028b9
 {
+    public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Flex\\' => 13,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Symfony\\Flex\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/flex/src',
+        ),
+    );
+
     public static $prefixesPsr0 = array (
         'M' => 
         array (
@@ -19,6 +33,8 @@ class ComposerStaticInitddf7d63a07ac8068a2157541b55028b9
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInitddf7d63a07ac8068a2157541b55028b9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitddf7d63a07ac8068a2157541b55028b9::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitddf7d63a07ac8068a2157541b55028b9::$prefixesPsr0;
 
         }, null, ClassLoader::class);

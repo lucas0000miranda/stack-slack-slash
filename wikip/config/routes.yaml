@@ -1,3 +1,7 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+qualquercoisa:
+  path: /
+  controller: App\Controller\Defaulti::index
+
+getSearch:
+  path: /search
+  controller: App\Controller\GetSearch::index
